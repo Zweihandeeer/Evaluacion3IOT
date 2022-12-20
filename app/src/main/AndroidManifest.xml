@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Madriaga_Velasquez_IOT_EV3">
         <activity
+            android:name=".agregar_eventos"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
