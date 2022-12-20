@@ -13,6 +13,12 @@
             android:name=".agregar_eventos"
             android:exported="false" />
         <activity
+            android:name=".menu"
+            android:exported="false" />
+        <activity
+            android:name=".registrousuario"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
