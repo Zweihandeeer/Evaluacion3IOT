@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:text="Eevento"
+        android:text="Evento"
         android:textAlignment="textStart"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,11 +111,44 @@
     <Spinner
         android:id="@+id/spnInportancia"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="Importancia"
         app:layout_constraintEnd_toEndOf="@+id/tvEvento"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvEvento"
         app:layout_constraintTop_toBottomOf="@+id/tilObservaciones" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tilTitulo"
+        app:layout_constraintStart_toStartOf="@+id/tilTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/spnInportancia">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Volver" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
