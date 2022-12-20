@@ -12,4 +12,6 @@ public class menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         getSupportActionBar().setTitle("Sistema ingreso de eventos");
     }
+
+
 }
